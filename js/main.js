@@ -88,7 +88,7 @@ typeWriter();
 
 // Last updated badge
 const lastUpdated = document.getElementById('last-updated');
-const lastUpdateDate = new Date('2025-04-28T00:00:00Z');
+const lastUpdateDate = new Date('2025-05-11T00:00:00Z');
 
 function timeSince(date) {
   const seconds = Math.floor((Date.now() - date.getTime()) / 1000);
