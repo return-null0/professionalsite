@@ -6,21 +6,26 @@
   <meta name="description" content="Renaldo Hyacinthe - Software Engineer Portfolio" />
   <title>Renaldo Hyacinthe | Software Engineer</title>
   <link rel="stylesheet" href="styles.css" />
-
 </head>
+
 <body>
+  <header class="hero">
+    <div class="intro-container">
+      <img src="newlinkedin_cropped.jpg" alt="Renaldo Hyacinthe" class="profile-pic" />
+      <h1 class="name-heading">Renaldo Hyacinthe</h1>
 
-    <header class="hero">
-        <div class="intro-container">
-          <img src="portrait.jpg" alt="Renaldo Hyacinthe" class="profile-pic" />
-          <h1 class="name-heading">Renaldo Hyacinthe</h1>
-          <p class="title-text">Software Engineer • Java • JavaScript • Full-Stack</p>
-        </div>
-      </header>
-      
-      
+      <!-- This will be animated by JS -->
+      <p class="subtitle"></p>
 
+      <p class="tech-stack">Java • JavaScript • SQL • Full-Stack</p>
+      <button id="theme-toggle">Toggle Theme</button>
+      <p class="update-badge"><span id="last-updated"></span></p>
+    </div>
+  </header>
+
+  <!-- Main content remains unchanged -->
   <main>
+    <!-- About -->
     <section>
       <h2>About Me</h2>
       <p>
@@ -29,38 +34,45 @@
       </p>
     </section>
 
+    <!-- Projects -->
     <section>
       <h2>Projects</h2>
 
       <div class="project">
         <h3>Offline Media Converter</h3>
         <p>A cross-platform Rust + GTK desktop app for converting media using FFmpeg, supporting offline GPU-accelerated processing. Built with performance and portability in mind.</p>
-        <a href="https://github.com/yourname/offline-media-converter" target="_blank">View on GitHub</a>
+        <a href="https://github.com/return-null0/mediaConverter" target="_blank">View on GitHub</a>
       </div>
 
       <div class="project">
-        <h3>Internal Business Mapping Tool (EduNet)</h3>
-        <p>Developed a Java- and JSP-based web app for enterprise mapping. Integrated Google Maps API with SQL data to display dynamic business layers for thousands of users.</p>
+        <h3>Internal Business Mapping Tool</h3>
+        <p>Developed a Java and JSP-based web app for enterprise mapping at Educational Networks. Integrated Google Maps API with SQL data to display dynamic business layers for internal sales teams.</p>
       </div>
 
       <div class="project">
-        <h3>AI Résumé Reviewer (WIP)</h3>
-        <p>An offline GTK desktop app that uses a local LLM (via Ollama) to review résumés. Integrates GUI design, prompt engineering, and secure API interactions.</p>
+        <h3>FAT32 File Recovery Tool</h3>
+        <p>Built a low-level recovery utility for FAT32 systems that restores deleted files by scanning raw disk sectors and reconstructing data using SHA-1 hashes or file names. Utilizes OpenSSL for hash verification and directly parses the File Allocation Table. This project showcases hands-on knowledge of systems programming and filesystem internals.</p>
+        <a href="https://github.com/return-null0/nyufile" target="_blank">View on GitHub</a>
       </div>
 
-      <!-- Add more projects here -->
+      <div class="project">
+        <h3>Social Network</h3>
+        <p>Built a cross-platform social media app using React Native and Expo with full support for image uploads via camera or gallery. Designed a secure Spring Boot backend with JWT-based authentication, post management, and multipart image storage. The frontend and backend communicate via a RESTful API, ensuring scalable and efficient data handling.</p>
+        <a href="https://github.com/return-null0/socialnetwork" target="_blank">View on GitHub</a>
+      </div>
     </section>
 
+    <!-- Contact -->
     <section>
       <h2>Contact</h2>
       <p>Email: <a href="mailto:renaldohyacinthe@nyu.edu">renaldohyacinthe@nyu.edu</a></p>
-      <p>GitHub: <a href="https://github.com/yourgithubusername" target="_blank">@yourgithubusername</a></p>
-    </section>
-  </main>
+      <p>GitHub: <a href="https://github.com/return-null0" target="_blank">@return-null0</a></p>
+    </section>  </main>
 
   <footer>
     &copy; 2025 Renaldo Hyacinthe. All rights reserved.
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
