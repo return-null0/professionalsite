@@ -1,29 +1,58 @@
-// Theme toggle logic
 const themeToggle = document.getElementById('theme-toggle');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('theme', theme);
+  updateThemeIcon();
 }
 
 function toggleTheme() {
   const current = document.documentElement.getAttribute('data-theme');
-  applyTheme(current === 'dark' ? 'light' : 'dark');
+  const next = current === 'dark' ? 'light' : 'dark';
+  applyTheme(next);
 }
 
+function updateThemeIcon() {
+  if (!themeToggle) return;
+  const theme = document.documentElement.getAttribute('data-theme');
+  themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
+// Initial theme setup
 const savedTheme = localStorage.getItem('theme');
 applyTheme(savedTheme || (prefersDark ? 'dark' : 'light'));
 
-if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+if (themeToggle) {
+  themeToggle.addEventListener('click', toggleTheme);
+}
 
 // Typewriter subtitle
-const roles = ['Software Engineer', 'Full-Stack Developer', 'Systems Programmer', 'Rust Explorer'];
+const roles = [
+  'Software Engineer',
+  'Full-Stack Developer',
+  'JSP Specialist',
+  'Apache Tomcat Expert',
+  'Java Backend Developer',
+  'Frontend Engineer (JavaScript)',
+  'Linux Systems Developer',
+  'Git Power User',
+  'Apache HTTP Server Admin',
+  'SQL & Data Modeling',
+  'TypeScript Practitioner',
+  'Rust Explorer',
+  'Cross-Platform App Builder',
+  'Web Performance Tuner',
+  'Systems-Level Debugger',
+  'DevOps Curious'
+];
+
 const subtitle = document.querySelector('.subtitle');
 let roleIndex = 0, charIndex = 0, typing = true;
 
 function typeWriter() {
   if (!subtitle) return;
+
   const currentRole = roles[roleIndex];
   subtitle.textContent = typing
     ? currentRole.slice(0, charIndex++)
@@ -34,7 +63,21 @@ function typeWriter() {
     setTimeout(typeWriter, 1000);
   } else if (!typing && charIndex === 0) {
     typing = true;
-    roleIndex = (roleIndex + 1) % roles.length;
+
+    if (roleIndex === 0) {
+      // After "Software Engineer", pick random non-zero index
+      const nextIndices = roles.slice(1);
+      const randomIndex = Math.floor(Math.random() * nextIndices.length) + 1;
+      roleIndex = randomIndex;
+    } else {
+      // After that, continue picking random excluding current
+      let nextIndex;
+      do {
+        nextIndex = Math.floor(Math.random() * roles.length);
+      } while (nextIndex === roleIndex);
+      roleIndex = nextIndex;
+    }
+
     setTimeout(typeWriter, 500);
   } else {
     setTimeout(typeWriter, 80);
