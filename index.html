@@ -3,76 +3,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Renaldo Hyacinthe - Software Engineer Portfolio" />
+  <meta
+    name="description"
+    content="Renaldo Hyacinthe - Software Engineer specializing in systems programming and visual computing."
+  />
   <title>Renaldo Hyacinthe | Software Engineer</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
-  <header class="hero">
-    <div class="intro-container">
-      <img src="newlinkedin_cropped.jpg" alt="Renaldo Hyacinthe" class="profile-pic" />
-      <h1 class="name-heading">Renaldo Hyacinthe</h1>
+  <div id="app">
+    <!-- HERO / HEADER -->
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <img
+            src="newlinkedin_cropped.jpg"
+            alt="Portrait of Renaldo Hyacinthe"
+            class="profile-pic"
+          />
+        </div>
+        <div class="hero-right">
+          <h1 class="name-heading">Renaldo Hyacinthe</h1>
+          <p class="role">Software Engineer</p>
+          <p class="tagline">
+           Software engineer with a focus on systems programming, data integrity, and
+  building tools that are straightforward to use.
+          </p>
 
-      <!-- This will be animated by JS -->
-      <p class="subtitle"></p>
 
-      <p class="tech-stack">Java • JavaScript • SQL • Full-Stack</p>
-    </div>
-  </header>
 
-  <!-- Main content remains unchanged -->
-  <main>
-    <!-- About -->
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I'm a professional software engineer with experience building scalable Java backends, dynamic JavaScript frontends, and web-integrated systems.
-        I enjoy working across the stack, especially when bridging modern UI with robust server-side logic. Recently, I've also begun exploring Rust and desktop development for offline tools.
-      </p>
-    </section>
-
-    <!-- Projects -->
-    <section>
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Offline Media Converter</h3>
-        <p>A cross-platform Rust + GTK desktop app for converting media using FFmpeg, supporting offline GPU-accelerated processing. Built with performance and portability in mind.</p>
-        <a href="https://github.com/return-null0/mediaConverter" target="_blank">View on GitHub</a>
+          
+        </div>
       </div>
+    </header>
 
-      <div class="project">
-        <h3>Internal Mapping Tool</h3>
-        <p>Developed a Java and JSP-based web app for enterprise mapping at Educational Networks. Integrated Google Maps API with SQL data to display dynamic business layers for internal sales teams.</p>
-      </div>
+    <main>
+      <!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-header">
+    <h2>About</h2>
+    <div class="section-line"></div>
+  </div>
+  <p class="body-text">
+    I’m a software engineer who likes understanding what’s actually happening
+    under the hood. A lot of my work starts at the “raw” data,
+    file systems, numerical data—and then climbs back up into something visual
+    and usable. I enjoy that full arc: from bytes to behavior.
+  </p>
+  <p class="body-text">
+    Technically, I’m most comfortable in languages like C, Java, and
+    JavaScript, and I tend to gravitate toward problems that involve structure:
+    file formats, geometry, or well-defined protocols. 
+  </p>
+  <p class="body-text">
+    I care about code that is clear, testable, and honest about its tradeoffs.
+    I’m looking for roles where I can work on technically interesting systems—
+    whether that’s backend infrastructure, developer tools, or products that sit
+    close to the data and give people real leverage.
+  </p>
+</section>
 
-      <div class="project">
-        <h3>FAT32 File Recovery Tool</h3>
-        <p>Built a low-level recovery utility for FAT32 systems that restores deleted files by scanning raw disk sectors and reconstructing data using SHA-1 hashes or file names. Utilizes OpenSSL for hash verification and directly parses the File Allocation Table. This project showcases hands-on knowledge of systems programming and filesystem internals.</p>
-        <a href="https://github.com/return-null0/nyufile" target="_blank">View on GitHub</a>
-      </div>
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="section-header">
+          <h2>Selected Projects</h2>
+          <div class="section-line"></div>
+        </div>
 
-      <div class="project">
-        <h3>Social Network</h3>
-        <p>Built a cross-platform social media app using React Native and Expo with full support for image uploads via camera or gallery. Designed a secure Spring Boot backend with JWT-based authentication, post management, and multipart image storage. The frontend and backend communicate via a RESTful API, ensuring scalable and efficient data handling.</p>
-        <a href="https://github.com/return-null0/socialnetwork" target="_blank">View on GitHub</a>
-      </div>
-    </section>
+        <div class="projects-grid">
 
-    <!-- Contact -->
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:renaldohyacinthe@nyu.edu">renaldohyacinthe@nyu.edu</a></p>
-      <p>GitHub: <a href="https://github.com/return-null0" target="_blank">@return-null0</a></p>
-    </section>  </main>
+          <!-- CURVE VISUALIZER -->
+          <article class="project-card">
+            <h3>Space Curve Visualizer</h3>
+            <p class="project-tagline">Frenet–Serret frames in your browser.</p>
+            <p class="project-body">
+              An interactive, browser-based tool for exploring 3D parametric
+              curves and their Frenet–Serret frames. Users can define curves
+              parametrically, visualize tangent/normal/binormal vectors, and see
+              curvature and torsion update in real time. Built with TypeScript,
+              Three.js, and a lightweight math engine, it’s my way of blending
+              differential geometry with modern web tooling.
+            </p>
+            <div class="project-links">
+              <!-- Update this href to your deployed URL, e.g. /curve or full GitHub Pages link -->
+              <a
+                href="https://return-null0.github.io/curveVisualizer/"
+                target="_blank"
+                rel="noreferrer"
+                class="project-link"
+              >
+                Open Visualizer →
+              </a>
+            </div>
+          </article>
 
-  <footer>
-    <p class="update-badge"><span id="last-updated"></span></p>
-    &copy; 2025 Renaldo Hyacinthe. All rights reserved. <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
-  </footer>
+                   <!-- FAT32 TOOL -->
+          <article class="project-card">
+            <h3>FAT32 File Recovery Tool</h3>
+            <p class="project-tagline">Low-level data recovery from raw sectors.</p>
+            <p class="project-body">
+              A filesystem-level recovery utility for FAT32 volumes that scans
+              raw disk sectors and reconstructs deleted files using SHA-1 hashes
+              or filenames. The tool directly parses the File Allocation Table
+              and leverages OpenSSL for cryptographic verification. This project
+              reflects my interest in systems programming, data integrity, and
+              working “under” the operating system’s abstractions.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/return-null0/nyufile"
+                target="_blank"
+                rel="noreferrer"
+                class="project-link"
+              >
+                View on GitHub →
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-  <script src="js/main.js"></script>
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+  <div class="section-header">
+    <h2>Contact</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <p class="body-text">
+    The best way to reach me is by email.
+  </p>
+
+
+
+  <!-- Contact Buttons -->
+  <div class="contact-buttons">
+    <a href="mailto:renaldohyacinthe@nyu.edu" class="btn primary">Email</a>
+
+    <a
+      href="https://github.com/return-null0"
+      target="_blank"
+      rel="noreferrer"
+      class="btn ghost"
+    >
+      GitHub Profile
+    </a>
+  </div>
+</section>
+    </main>
+
+    <footer id="footer">
+      <span>© 2025 Renaldo Hyacinthe. All rights reserved.</span>
+    </footer>
+  </div>
 </body>
 </html>
