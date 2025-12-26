@@ -28,7 +28,7 @@
           <h1 class="name-heading">Renaldo Hyacinthe</h1>
           <p class="role">Software Engineer</p>
           <p class="tagline">
-           Everything reduces to a<sup>2</sup> + b<sup>2</sup> eventually.
+           Magnitude and Direction.
           </p>
 
 
@@ -46,34 +46,50 @@
     <div class="section-line"></div>
   </div>
   <p class="body-text">
-I’m a software engineer who enjoys working with clear, well-defined problems and turning
- them into reliable software. I like understanding how systems behave, why they break, and
-  how to make them easier to reason about.
-  </p>
-  <p class="body-text">
-    I work mainly with C, Java, and JavaScript, and I especially enjoy projects involving data,
-     structure, and geometry. I prefer building things that are simple to maintain, predictable in 
-     how they run, and easy for others to build on. 
-  </p>
-  <p class="body-text">
-    I care about code that is concise and honest about its tradeoffs.
-    I like systems that are structured, predictable, and meaningful to the people who use them.
+    I turn ambiguous problems into reliable software. My work focuses on system 
+    behavior and stability by understanding how a program executes and 
+    ensuring it handles failure gracefully. I specialize in Java and JavaScript, with a specific interest in
+    data structures and geometry. I prefer building things that are simple to maintain 
+    and transparent in logic.
+
+
+    I believe code should be concise and honest about its tradeoffs. I build systems 
+    that are structured, predictable, and built to last.
   </p>
 </section>
 
       <!-- PROJECTS -->
       <section class="section" id="projects">
         <div class="section-header">
-          <h2>Selected Projects</h2>
+          <h2>Projects</h2>
           <div class="section-line"></div>
         </div>
 
         <div class="projects-grid">
+<article class="project-card">
+  <h3>AI Playground</h3>
+  <p class="project-tagline">Multimodal native intelligence: Computer Vision & LLMs.</p>
+  <p class="project-body">
+    A desktop application bridging two domains of AI: real-time object detection and Large Language Model inference. 
+    Built on Electron and TensorFlow.js, the application employs a parallelized multi-process architecture to decouple heavy tensor operations from the UI thread,
+     ensuring zero-latency rendering. Features a custom built pipeline designed to handle native C++ binary dependencies, ASAR filesystem virtualization, and OS X hardened runtime requirements.
+  </p>
+  <div class="project-links">
+    <a
+      href="https://github.com/return-null0/playground/" 
+      target="_blank"
+      rel="noreferrer"
+      class="project-link"
+    >
+      View on GitHub →
+    </a>
+  </div>
+</article>
 
           <!-- CURVE VISUALIZER -->
           <article class="project-card">
             <h3>Space Curve Visualizer</h3>
-            <p class="project-tagline">Frenet–Serret frames in your browser.</p>
+            <p class="project-tagline">The Geometric Mindset</p>
             <p class="project-body">
               An interactive, browser-based tool for exploring 3D parametric
               curves and their Frenet–Serret frames. Users can define curves
@@ -93,30 +109,7 @@ I’m a software engineer who enjoys working with clear, well-defined problems a
               </a>
             </div>
           </article>
-
-                   <!-- FAT32 TOOL -->
-          <article class="project-card">
-            <h3>FAT32 File Recovery Tool</h3>
-            <p class="project-tagline">Low-level data recovery from raw sectors.</p>
-            <p class="project-body">
-              A filesystem-level recovery utility for FAT32 volumes that scans
-              raw disk sectors and reconstructs deleted files using SHA-1 hashes
-              or filenames. The tool directly parses the File Allocation Table
-              and leverages OpenSSL for cryptographic verification. This project
-              reflects my interest in systems programming, data integrity, and
-              working “under” the operating system’s abstractions.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/return-null0/nyufile"
-                target="_blank"
-                rel="noreferrer"
-                class="project-link"
-              >
-                View on GitHub →
-              </a>
-            </div>
-          </article>
+          
         </div>
       </section>
 
