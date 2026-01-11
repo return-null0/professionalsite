@@ -14,7 +14,6 @@
 
 <body>
   <div id="app">
-    <!-- HERO / HEADER -->
     <header class="hero">
       <div class="hero-inner">
         <div class="hero-left">
@@ -30,35 +29,28 @@
           <p class="tagline">
            Magnitude and Direction.
           </p>
-
-
-
-          
         </div>
       </div>
     </header>
 
     <main>
-      <!-- ABOUT -->
-<section class="section" id="about">
-  <div class="section-header">
-    <h2>About</h2>
-    <div class="section-line"></div>
-  </div>
-  <p class="body-text">
-    I turn ambiguous problems into reliable software. My work focuses on system 
-    behavior and stability by understanding how a program executes and 
-    ensuring it handles failure gracefully. I specialize in Java and JavaScript, with a specific interest in
-    data structures and geometry. I prefer building things that are simple to maintain 
-    and transparent in logic.
+      <section class="section" id="about">
+        <div class="section-header">
+          <h2>About</h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="body-text">
+          I turn ambiguous problems into reliable software. My work focuses on system 
+          behavior and stability by understanding how a program executes and 
+          ensuring it handles failure gracefully. I specialize in Java and JavaScript, with a specific interest in
+          data structures and geometry. I prefer building things that are simple to maintain 
+          and transparent in logic.
 
+          I believe code should be concise and honest about its tradeoffs. I build systems 
+          that are structured, predictable, and built to last.
+        </p>
+      </section>
 
-    I believe code should be concise and honest about its tradeoffs. I build systems 
-    that are structured, predictable, and built to last.
-  </p>
-</section>
-
-      <!-- PROJECTS -->
       <section class="section" id="projects">
         <div class="section-header">
           <h2>Projects</h2>
@@ -66,38 +58,42 @@
         </div>
 
         <div class="projects-grid">
-<article class="project-card">
-  <h3>AI Playground</h3>
-  <p class="project-tagline">Multimodal native intelligence: Computer Vision & LLMs.</p>
-  <p class="project-body">
-    A desktop application bridging two domains of AI: real-time object detection and Large Language Model inference. 
-    Built on Electron and TensorFlow.js, the application employs a parallelized multi-process architecture to decouple heavy tensor operations from the UI thread,
-     ensuring zero-latency rendering. Features a custom built pipeline designed to handle native C++ binary dependencies, ASAR filesystem virtualization, and OS X hardened runtime requirements.
-  </p>
-  <div class="project-links">
-    <a
-      href="https://github.com/return-null0/playground/" 
-      target="_blank"
-      rel="noreferrer"
-      class="project-link"
-    >
-      View on GitHub →
-    </a>
-  </div>
-</article>
-
-          <!-- CURVE VISUALIZER -->
+          
           <article class="project-card">
-            <h3>Space Curve Visualizer</h3>
-            <p class="project-tagline">The Geometric Mindset</p>
-            <p class="project-body">
-              An interactive, browser-based tool for exploring 3D parametric
-              curves and their Frenet–Serret frames. Users can define curves
-              parametrically, visualize tangent/normal/binormal vectors, and see
-              curvature and torsion update in real time. Built with TypeScript,
-              Three.js, and a lightweight math engine, it’s my way of blending
-              differential geometry with modern web tooling.
-            </p>
+            <div class="card-content">
+              <h3>AI Playground</h3>
+              <p class="project-tagline">Multimodal native intelligence: Computer Vision & LLMs.</p>
+              <p class="project-body">
+                A desktop application bridging two domains of AI: real-time object detection and Large Language Model inference. 
+                Built on Electron and TensorFlow.js, the application employs a parallelized multi-process architecture to decouple heavy tensor operations from the UI thread,
+                ensuring zero-latency rendering. Features a custom built pipeline designed to handle native C++ binary dependencies, ASAR filesystem virtualization, and OS X hardened runtime requirements.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/return-null0/playground/" 
+                target="_blank"
+                rel="noreferrer"
+                class="project-link"
+              >
+                View on GitHub →
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-content">
+              <h3>Space Curve Visualizer</h3>
+              <p class="project-tagline">The Geometric Mindset</p>
+              <p class="project-body">
+                An interactive, browser-based tool for exploring 3D parametric
+                curves and their Frenet–Serret frames. Users can define curves
+                parametrically, visualize tangent/normal/binormal vectors, and see
+                curvature and torsion update in real time. Built with TypeScript,
+                Three.js, and a lightweight math engine, it’s my way of blending
+                differential geometry with modern web tooling.
+              </p>
+            </div>
             <div class="project-links">
               <a
                 href="https://curve.renaldohyacinthe.me/"
@@ -107,39 +103,76 @@
               >
                 Open in Browser →
               </a>
+              <a
+                href="https://github.com/return-null0/curveVisualizer/" 
+                target="_blank"
+                rel="noreferrer"
+                class="project-link"
+              >
+                View on GitHub →
+              </a>
             </div>
           </article>
-          
+
+          <article class="project-card">
+            <div class="card-content">
+              <h3>Media Studio</h3>
+              <p class="project-tagline">Serverless Media Processing</p>
+              <p class="project-body">
+                A privacy-focused creative tool running entirely in the browser via WebAssembly. 
+                Using FFmpeg.wasm for frame-accurate video rendering and HuggingFace's Transformer's for client-side inference, 
+                it enables complex editing workflows without data ever leaving the device. 
+                The application implements an adaptive resource strategy, loading 4-bit quantized models 
+                to navigate strict mobile memory constraints, while automatically scaling to higher precision on desktop 
+                for speech recognition and image segmentation.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://mediashop.renaldohyacinthe.me/" 
+                target="_blank"
+                rel="noreferrer"
+                class="project-link"
+              >
+                Open in Browser →
+              </a>
+              <a
+                href="https://github.com/return-null0/mediashop" 
+                target="_blank"
+                rel="noreferrer"
+                class="project-link"
+              >
+                View on GitHub →
+              </a>
+            </div>
+          </article>
+
         </div>
       </section>
 
-      <!-- CONTACT -->
       <section class="section" id="contact">
-  <div class="section-header">
-    <h2>Contact</h2>
-    <div class="section-line"></div>
-  </div>
+        <div class="section-header">
+          <h2>Contact</h2>
+          <div class="section-line"></div>
+        </div>
 
-  <p class="body-text">
-    The best way to reach me is by email.
-  </p>
+        <p class="body-text">
+          The best way to reach me is by email.
+        </p>
 
+        <div class="contact-buttons">
+          <a href="mailto:renaldohyacinthe@nyu.edu" class="btn primary">Email</a>
 
-
-  <!-- Contact Buttons -->
-  <div class="contact-buttons">
-    <a href="mailto:renaldohyacinthe@nyu.edu" class="btn primary">Email</a>
-
-    <a
-      href="https://github.com/return-null0"
-      target="_blank"
-      rel="noreferrer"
-      class="btn ghost"
-    >
-      GitHub Profile
-    </a>
-  </div>
-</section>
+          <a
+            href="https://github.com/return-null0"
+            target="_blank"
+            rel="noreferrer"
+            class="btn ghost"
+          >
+            GitHub Profile
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer id="footer">
