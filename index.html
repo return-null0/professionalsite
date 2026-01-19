@@ -14,40 +14,82 @@
 
 <body>
   <div id="app">
-    <header class="hero">
-      <div class="hero-inner">
-        <div class="hero-left">
-          <img
-            src="newlinkedin_cropped.jpg"
-            alt="Portrait of Renaldo Hyacinthe"
-            class="profile-pic"
-          />
-        </div>
-        <div class="hero-right">
-          <h1 class="name-heading">Renaldo Hyacinthe</h1>
-          <p class="role">Software Engineer</p>
-          <p class="tagline">
-           Magnitude and Direction.
-          </p>
-        </div>
-      </div>
+    <header class="header">
+        <h1 class="name-heading">RH</h1>
+        <div class="svg-icons">
+          <a href="https://github.com/return-null0">
+          <svg class="svg-icon"
+  xmlns="http://www.w3.org/2000/svg" 
+  width="20" 
+  height="20" 
+  viewBox="0 0 24 24" 
+  fill="none" 
+  stroke="currentColor" 
+  stroke-width="2" 
+  stroke-linecap="round" 
+  stroke-linejoin="round"
+>
+
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg> 
+</a>
+
+<a href ="https://www.linkedin.com/in/renaldo-hyacinthe-094a56210/">
+
+  <svg class="svg-icon"
+  xmlns="http://www.w3.org/2000/svg" 
+  width="20" 
+  height="20" 
+  viewBox="0 0 24 24" 
+  fill="none" 
+  stroke="currentColor" 
+  stroke-width="2" 
+  stroke-linecap="round" 
+  stroke-linejoin="round"
+  >
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+  <rect x="2" y="9" width="4" height="12"></rect>
+  <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+
+<a href="mailto:renaldohyacinthe@nyu.edu">
+
+  <svg class="svg-icon"
+  xmlns="http://www.w3.org/2000/svg" 
+  width="20" 
+  height="20" 
+  viewBox="0 0 24 24" 
+  fill="none" 
+  stroke="currentColor" 
+  stroke-width="2" 
+  stroke-linecap="round" 
+  stroke-linejoin="round"
+  >
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+  <polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+</a>
+
+</div>
     </header>
 
     <main>
       <section class="section" id="about">
+        <img
+            src="newlinkedin_cropped.jpg"
+            alt="Portrait of Renaldo Hyacinthe"
+            class="profile-pic"
+          />
         <div class="section-header">
           <h2>About</h2>
           <div class="section-line"></div>
         </div>
         <p class="body-text">
-          I turn ambiguous problems into reliable software. My work focuses on system 
-          behavior and stability by understanding how a program executes and 
-          ensuring it handles failure gracefully. I specialize in Java and JavaScript, with a specific interest in
-          data structures and geometry. I prefer building things that are simple to maintain 
-          and transparent in logic.
-
-          I believe code should be concise and honest about its tradeoffs. I build systems 
-          that are structured, predictable, and built to last.
+I'm Renaldo, a software engineer with <span style="color:var(--accent)">magnitude & direction.</span> 
+  I am a full-stack developer who leverages my strong foundation in mathematics and data structures 
+  to build reliable systems. My work focuses on behavior and stability by crafting transparent 
+  logic that handles failure gracefully and is built to last.
         </p>
       </section>
 
@@ -150,29 +192,6 @@
         </div>
       </section>
 
-      <section class="section" id="contact">
-        <div class="section-header">
-          <h2>Contact</h2>
-          <div class="section-line"></div>
-        </div>
-
-        <p class="body-text">
-          The best way to reach me is by email.
-        </p>
-
-        <div class="contact-buttons">
-          <a href="mailto:renaldohyacinthe@nyu.edu" class="btn primary">Email</a>
-
-          <a
-            href="https://github.com/return-null0"
-            target="_blank"
-            rel="noreferrer"
-            class="btn ghost"
-          >
-            GitHub Profile
-          </a>
-        </div>
-      </section>
     </main>
 
     <footer id="footer">
