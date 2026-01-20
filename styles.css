@@ -212,7 +212,9 @@ body {
   padding-top: 1.5rem;
   margin-top: auto;
 }
-
+.hyperlink{
+  text-decoration: none;
+}
 .project-link {
   font-family: var(--font-mono);
   font-size: 0.85rem;
