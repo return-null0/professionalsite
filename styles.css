@@ -1,21 +1,15 @@
 :root {
-
   --bg: #0d1117;
   --bg-elevated: #161b22; 
-
   --surface: rgba(22, 27, 44, 0.4);
   --surface-border: rgba(255, 255, 255, 0.08);
   --surface-hover: rgba(255, 255, 255, 0.03);
-
   --accent: #0fd3b5;
   --accent-text: #80ffe8; 
-
   --text-main: #ececf3;
   --text-muted: #9496a8;
-
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
-
   --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -32,12 +26,23 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: var(--bg);
-  background-position: 0 0, -20px -20px, -20px -20px;
+
+  background-color: transparent; 
   color: var(--text-main);
   font-family: var(--font-sans);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+#canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; 
+  pointer-events: none; 
 }
 
 #app {
@@ -94,7 +99,6 @@ body {
   margin-top: 6rem; 
   display: flex;
   align-items: flex-start;
-
 }
 
 .profile-pic {
@@ -212,9 +216,11 @@ body {
   padding-top: 1.5rem;
   margin-top: auto;
 }
-.hyperlink{
+
+.hyperlink {
   text-decoration: none;
 }
+
 .project-link {
   font-family: var(--font-mono);
   font-size: 0.85rem;
@@ -224,7 +230,7 @@ body {
   right: 50px;
 }
 
-.project-link-anchor{
+.project-link-anchor {
   text-decoration: none;
 }
 
@@ -251,7 +257,7 @@ body {
 }
 
 #footer {
-width: 100%;
+  width: 100%;
   margin-top: 2rem;
   padding: 1rem 0;
   text-align: center;
@@ -260,7 +266,7 @@ width: 100%;
   font-family: var(--font-mono);
   font-size: 0.85rem;
   letter-spacing: 0.03em;
-border-top: 1px solid var(--surface-border);
+  border-top: 1px solid var(--surface-border);
 }
 
 @media (max-width: 768px) {
